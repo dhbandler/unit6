@@ -5,5 +5,8 @@
 fileForOpen =input("enter a file name here")
 file = open(fileForOpen) 
 
+lines = []
 for line in file:
-    print(file.reverse)
+    lines.append(line.split())
+
+print(lines.reverse())
