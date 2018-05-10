@@ -7,5 +7,10 @@ file = open("engmix.txt")
 length = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 for line in file:
-    length[len(line)-1] += 1
-print(length)
+    length[len(line.strip())-1] += 1
+
+times = 1
+while times <= len(length):
+    print("ẗhere are",length[times-1], "words with", times, "letters")
+    times += 1
+
