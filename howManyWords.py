@@ -11,6 +11,6 @@ for line in file:
 
 times = 1
 while times <= len(length):
-    print("ẗhere are",length[times-1], "words with", times, "letters")
+    print(times, "-lettter words: ", length[times-1])
     times += 1
 
