@@ -8,7 +8,7 @@ file = open("engmix.txt")
 longestWord = []
 
 for line in file:
-    if len(line) > len(longestWord):
+    if len(line.strip()) > len(longestWord):
         longestWord = line
 
     
