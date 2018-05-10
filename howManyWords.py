@@ -4,7 +4,7 @@
 
 file = open("engmix.txt")
 
-length = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+length = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 for line in file:
     length[len(line.strip())-1] += 1
