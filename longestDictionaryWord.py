@@ -13,3 +13,4 @@ for line in file:
 
     
 print(longestWord)
+print(len(longestWord), "characters")
