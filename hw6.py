@@ -21,6 +21,29 @@ for line in file:
     if numLines == 888:
         print(line.strip())
 """
-file = open("palindromes.txt")
+"""
+file = open("warmup16.py")
 for line in file:
     print(line.strip(), "!")
+"""
+"""
+file = open("engmix.txt")
+letter = input("Type a letter here.  ")
+mostLetters = []
+letterCount = 0
+
+
+for line in file:
+    lineLetter = line.count(letter)
+    if lineLetter > letterCount:
+        letterCount = lineLetter
+        mostLetters = line.strip()
+            
+print(mostLetters)
+"""
+
+
+
+    
+    
+  
