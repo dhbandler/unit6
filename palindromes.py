@@ -3,7 +3,7 @@
 #palindromes.py
 
 
-file = open("engmix.txt")
+file = open("palindromes.py")
 
 
 for line in file:
