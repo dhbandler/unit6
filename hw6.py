@@ -11,6 +11,20 @@ if wordguess in wordlist:
     print("yes")
 else:
     print("no")
+
+
+file = open("engmix.txt")
+
+word = input("guess a word ")
+for line in file:
+    line = line.strip()
+    if word == line:
+        print("in dictionary")
+        inD = True
+        break
+    
+if not inD:
+    print("no")
 """
 """
 file = open("engmix.txt")
@@ -26,12 +40,13 @@ file = open("warmup16.py")
 for line in file:
     print(line.strip(), "!")
 """
-"""
+
 file = open("engmix.txt")
 letter = input("Type a letter here.  ")
 mostLetters = []
 letterCount = 0
 
+for letter in "abcdefghijklmnopqrstuvwxyz"
 
 for line in file:
     lineLetter = line.count(letter)
@@ -40,7 +55,7 @@ for line in file:
         mostLetters = line.strip()
             
 print(mostLetters)
-"""
+
 
 
 
