@@ -46,7 +46,6 @@ letter = input("Type a letter here.  ")
 mostLetters = []
 letterCount = 0
 
-for letter in "abcdefghijklmnopqrstuvwxyz"
 
 for line in file:
     lineLetter = line.count(letter)
