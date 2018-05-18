@@ -11,13 +11,13 @@ word2List = []
 
 for char in word1:
     word1List.append(char)
-    word1List.sort()
+word1List.sort()
 
 for line in file:
     line = line.strip()
     for let in line:
         word2List.append(let)
-        word2List.sort()
+    word2List.sort()
     if word2List == word1List:
         print(line)
     word2List = []
