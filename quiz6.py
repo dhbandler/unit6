@@ -19,13 +19,14 @@ for line in file:
             print(line)
     letInLine = 0
 """
-
+"""
 #Program 2
 file = open("engmix.txt")
 
 word = []
 
 for line in file:
+    line = line.strip()
     for ch in line:
         word.append(ch)
     if len(word) >= 9:
@@ -33,4 +34,46 @@ for line in file:
             print(line)
             break
     word = []
+"""
+
+"""
+#Program 3
+numLength =int(input("Input a number "))
+firstLet = input("type a letter ")
+file = open("engmix.txt")
+word = []
+
+for line in file:
+    line = line.strip()
+    if len(line) == numLength:
+            for ch in line:
+                word.append(ch)
+            if word[0] == firstLet:
+                print(line)
+            word = []
+"""
+
+"""
+#Program 4
+
+file = open("engmix.txt")
+totalNum = 0
+
+for line in file:
+    if len(line) >= 10:
+        totalNum += 1
+    if totalNum == 8000:
+        print(line)
+"""
+
+#Program 5:
+file = open("engmix.txt")
+
+vowelCount = 0
+
+for line in file:
+    
+    
+
+
         
