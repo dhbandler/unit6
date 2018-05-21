@@ -51,8 +51,8 @@ for line in file:
             if word[0] == firstLet:
                 print(line)
             word = []
-"""
 
+"""
 """
 #Program 4
 
@@ -60,12 +60,13 @@ file = open("engmix.txt")
 totalNum = 0
 
 for line in file:
+    line = line.strip()
     if len(line) >= 10:
         totalNum += 1
     if totalNum == 8000:
         print(line)
+        break
 """
-
 """
 #Program 5 (Not working; please disregard):
 file = open("engmix.txt")
