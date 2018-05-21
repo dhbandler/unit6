@@ -66,12 +66,30 @@ for line in file:
         print(line)
 """
 
-#Program 5:
+"""
+#Program 5 (Not working; please disregard):
 file = open("engmix.txt")
 
 vowelCount = 0
+vowelMax = 0
+longestWord = " "
+
 
 for line in file:
+    line = line.strip()
+    break
+    vowelCount = line.count("a") + line.count("e") + line.count("i") + line.count("o") + line.count("u")
+    if vowelCount > vowelMax:
+        vowelMax = vowelCount
+        longestWord = line
+    vowelCount = 0
+print(line)
+print(vowelCount)
+
+"""
+
+    
+    
     
     
 
